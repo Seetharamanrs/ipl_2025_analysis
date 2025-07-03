@@ -31,3 +31,15 @@ sns.barplot(x=top_batsmen.index, y=top_batsmen.values, ax=ax2)
 ax2.set_title(f"Top Batsmen in {s_t}")
 ax2.tick_params(axis='x', rotation=30)
 st.pyplot(fig2)
+
+# Team Score Summary
+st.subheader("Team Total Runs")
+
+df["total_run"] = df["runs_of_bat"] + df["extras"]
+team_total = df.groupby("batting_team")["total_run"].sum().sort_values(ascending=False)
+
+fig3, ax3 = plt.subplots()
+sns.barplot(x=team_total.index, y=team_total.values, ax=ax3)
+ax3.set_title("Total Team Scores in IPL 2025")
+ax3.tick_params(axis='x', rotation=45)
+st.pyplot(fig3)
