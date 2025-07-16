@@ -2,7 +2,10 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
+current_dir = os.path.dirname(__file__)
+path = os.path.normpath(os.path.join(current_dir, '..', 'data', 'ipl_2025_deliveries.csv'))
 st.set_page_config("Wide")
 st.title('IPL_Analysis')
 path="../data/ipl_2025_deliveries.csv"
