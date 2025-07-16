@@ -8,7 +8,6 @@ current_dir = os.path.dirname(__file__)
 path = os.path.normpath(os.path.join(current_dir, '..', 'data', 'ipl_2025_deliveries.csv'))
 st.set_page_config("Wide")
 st.title('IPL_Analysis')
-path="../data/ipl_2025_deliveries.csv"
 df=pd.read_csv(path)
 team_colors = {
     'RCB': '#D50032',
@@ -68,4 +67,3 @@ ax3.set_title("Total Team Scores in IPL 2025")
 ax3.set_xlabel('Team Name ')
 ax3.set_ylabel('Runs Scored')
 st.pyplot(fig3)
-
