@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config("Wide")
 st.title('IPL_Analysis')
-path="D:\my_git\ipl_2025_analysis\data\ipl_2025_deliveries.csv"
+path="../data/ipl_2025_deliveries.csv"
 df=pd.read_csv(path)
 team_colors = {
     'RCB': '#D50032',
