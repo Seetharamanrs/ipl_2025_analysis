@@ -29,7 +29,7 @@
 - Analyzed wide balls and wickets for specific teams 
 - Highlighted Best CSK bowler and batsmen.
 ### **Boundary Analysis**
-- Number of **Fours(4s)**and **sixes(6s)** hiy by CSK batsmen.
+- Number of **Fours(4s)**and **sixes(6s)** hit by CSK batsmen.
 ## Visulization 
 The notebook includes seaborn/matplotlib visualizations such as:
 - Barchats for:
